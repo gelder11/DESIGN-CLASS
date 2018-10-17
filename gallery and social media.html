@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery</title>
+<link rel="icon" href="favicon.ico" type="image/ico" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+<xxxx src="SlideShow.js"></xxxx>
+
+
+
+<!--[if lt IE 9]>
+<xxxx src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</xxxx>
+<![endif]-->
+</head>
+
+<!--
+Kathlyn Olson
+About Us
+09/19/18
+< -->
+
+<a name="toppage">
+<body>
+
+		<main id="body" class="width">
+			<aside id="sidebar" class="column-left">
+
+			<header>
+				<h1><a href="index.html"><img src="assets/Logo.jpg"   style="width:100%"></a></h1>
+
+				
+				
+			</header>
+
+			<nav id="mainnav">
+  				<ul>
+                            		
+  
+   <li><a href="index.html">HOME</a></li>
+  <li><a href="about us.html">About Us</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="NutritionalPage.html">Nutritional Page</a></li>
+  <li><a href="gallery and social media.html">Gallery/Social Media</a></li>
+  <li><a href="events and specials.html">Events/Specials</a></li> 
+  <li><a href="reservations.html">Reservations</a></li>
+  <li><a href="career opportunities.html">Career Opportunities</a></li>
+  <li><a href="contact us.html">Contact Us</a></li>
+                        	</ul>
+			</nav>
+			
+			
+			
+			
+			</aside>
+			<main id="content" class="column-right">
+                	<h1><center>Picture Gallery</center></h1>
+					<div class="gallery" style="max-width:700px">
+						<div class="Arrow"  style="width:50px">								
+							<div class="arrow-left" xx="plusDivs(-1)">&#10094;</div>
+							<div class="arrow-right" xx="plusDivs(1)">&#10095;</div>
+							
+						</div>
+						<img class="SlideShow" src="assets/Gallery_pics/Baked.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/MushroomStroganoff.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/Front.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/PingPong.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/PingPongTable.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/TacoFlavoredKisses.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/FlowerFront.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/kitchen.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/Work.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/DrinkMenu.jpg"   style="width:100%">				
+						<img class="SlideShow" src="assets/Gallery_pics/ColdOne.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/BBQ.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/Spread.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/BuffaloBeeb.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/outside.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/TaterNachos.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/SquashNachos.jpg"   style="width:100%">
+						<img class="SlideShow" src="assets/Gallery_pics/Cookie.jpg"   style="width:100%">
+						
+						
+						
+					</div>
+					<xxxx>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+						showDivs(slideIndex += n);
+					}
+
+					function showDivs(n)
+					{
+						var i;
+						var x = document.getElementsByClassName("SlideShow");
+						var dots = document.getElementsByClassName("index-bubble")
+						if (n > x.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = x.length} ;
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+						 dots[i].className = dots[i].className.replace("index-bubble", "");
+						}
+						x[slideIndex-1].style.display = "block";
+						dots[slideIndex-1].className += "index-bubble";
+					}
+					</xxxx>
+					
+			<footer class="clear">
+				<br><br><br><br><a href="#toppage"><img src="assets/Red Pepper.jpg" width="124" height="60" class="centerfooter"><a/>
+			</footer>
+
+		</main>
+
+		<div class="clear"></div>
+
+	</main>
+	
+
+</body>
+</html>
